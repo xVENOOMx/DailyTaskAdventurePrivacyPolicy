@@ -2,6 +2,23 @@
 <html>
 <head>
 <style>
+  .textarea::-webkit-resizer {
+  background-image: url('../../public/images/ResizeIndicator.svg');
+}
+
+textarea::-webkit-scrollbar {
+  overflow: hidden;
+}
+
+.textarea::-webkit-scrollbar {
+  width: 14px;
+  display: hidden;
+}
+
+.textarea {
+  resize:vertical;
+  overflow-y: scroll;
+}
 </style>
 </head>
 <body>
